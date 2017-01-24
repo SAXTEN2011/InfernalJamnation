@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
-<body onclick = "startStop()">
+<body>
 <h2>Why call it Infernal Jamnation When You Can Call It...</h2>
 <h1>Infernal</h1>
 </body>
@@ -57,7 +57,7 @@
             }
 
     $(document).on('click', function(event) {
-//                startStop();
+                startStop();
             }).keydown(function () {
                 startStop();
             });
@@ -67,6 +67,7 @@
 
 
     function startStop() {
+        alert("click");
         if(nC){
             //stop roll
             count = 0;
