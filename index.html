@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Infernal Jamnation</title>
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./shake.js"></script>
 </head>
 <body>
 <h2>Why call it Infernal Jamnation When You Can Call It...</h2>
@@ -70,6 +71,12 @@
                 startStop();
             });
 
+
+    $.shake({
+        callback: function() {
+            startStop();
+        }
+    });
 
 
 
